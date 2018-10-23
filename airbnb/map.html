@@ -1,0 +1,73 @@
+<head>
+  <title>CSS3-layouts</title>
+  <link rel="stylesheet" href="airbnb.css">
+  <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.10&key=134a4f07432f41bc5d585638d0e8b4a8"></script>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+  <div class="navbar-wagon">
+      <!-- Logo -->
+      <a href="/" class="navbar-wagon-brand">
+        <img src="../images/logo.png" alt="logo">
+      </a>
+      <!-- Right Navigation -->
+      <div class="navbar-wagon-right hidden-xs hidden-sm">
+        <a href="" class="navbar-wagon-item navbar-wagon-link">Host</a>
+        <a href="" class="navbar-wagon-item navbar-wagon-link">Trips</a>
+        <a href="" class="navbar-wagon-item navbar-wagon-link">Messages</a>
+        <!-- Profile picture with dropdown list -->
+        <div class="navbar-wagon-item">
+          <div class="dropdown">
+            <img src="https://avatars3.githubusercontent.com/u/11469112?s=460&v=4" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="main-container">
+    <div class="cards-container">
+      <div class="card" style="background-image: url('https://picsum.photos/200/200/?random')"></div>
+      <div class="card">Shanghai</div>
+      <div class="card">Hangzou</div>
+      <div class="card">Suzhou</div>
+      <div class="card">Beijing</div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+    <div class="map" id="container">
+      <div></div>
+    </div>
+  </div>
+</body>
+<script>
+  window.onLoad  = function(){
+    var map = new AMap.Map('container', {
+        resizeEnable: true,
+        center: [121.30983, 31.191],
+        zoom: 13
+    });
+  }
+  var url = 'https://webapi.amap.com/maps?v=1.4.10&key=134a4f07432f41bc5d585638d0e8b4a8&callback=onLoad';
+  var jsapi = document.createElement('script');
+  jsapi.charset = 'utf-8';
+  jsapi.src = url;
+  document.head.appendChild(jsapi);
+</script>
+<!-- https://picsum.photos/200/300/?random -->

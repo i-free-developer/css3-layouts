@@ -1,0 +1,29 @@
+@import url("components/banner.css");
+@import url("components/navbar.css");
+@import url("components/user-dash.css");
+@import url("components/content.css");
+@media(max-width: 992px) { 
+  body {
+    width: 700px;
+  }
+}
+@media(max-width: 768px) { 
+  body {
+    width: 500px;
+  }
+}
+@media(max-width: 480px) { 
+  body {
+    width: 350px;
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

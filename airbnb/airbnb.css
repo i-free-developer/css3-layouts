@@ -1,0 +1,52 @@
+@import url("../medium_post/css/components/navbar.css");
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+.main-container {
+  display: flex;
+  padding: 30px;
+}
+.cards-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-right: 10px;
+}
+#container {
+  height: 100vh;
+  flex: 0 0 450px;
+  position: sticky !important;
+  top: 0 !important;
+  margin: 0;
+}
+.card {
+  min-width: 200px;
+  min-height: 200px;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0px;
+  margin: 10px 0px;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-size: 25px;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  flex: 0 0 30%;
+}
+@media(max-width: 992px) {
+  .card {
+    flex: 0 0 45%;
+  }
+}
+@media(max-width: 768px) {
+  .card {
+    flex: 0 0 90%;
+  }
+}

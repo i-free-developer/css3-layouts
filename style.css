@@ -78,6 +78,7 @@
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-radius: 3px;
 }
 .grid-card:hover {
@@ -87,6 +88,7 @@
   margin: 10px;
   text-align: center;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   border-radius: 3px;
 }
@@ -95,6 +97,7 @@
 }
 .card-content {
   margin: 10px;
+  flex-grow: 1;
 }
 .group {
   grid-row: 1 / span 1;
@@ -150,8 +153,8 @@
   border-radius: 50%;
   color: white;
   background-color: rgba(0,0,0,0.75);
-  margin-right: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  flex: 0 0 20%;
 }
 .grid-img:hover {
   display: flex;
@@ -164,8 +167,8 @@
   border-radius: 50%;
   color: white;
   background-color: RGBA(206, 55, 61, 1.00);
-  margin-right: 20px;
   box-shadow: 0 0 10px RGBA(206, 55, 61, 1.00);
+  flex: 0 0 20%;
 }
 .red-btn {
   display: flex;
@@ -190,4 +193,32 @@
   transition: all 200ms ease-in;
   transform: scale(4.2);
   margin: 100px;
+}
+.grid-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 80px;
+  min-height: 80px;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 3px;
+  flex: 0 0 20%;
+}
+.grid-code:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 80px;
+  min-height: 80px;
+  background-color: #37B686;
+  border-radius: 3px;
+  flex: 0 0 20%;
+}
+.grid-code a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
 }
